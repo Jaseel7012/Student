@@ -71,6 +71,25 @@ public class Student {
             case 2:
                 s.forEach(d-> System.out.println("Admission code ..:"+d.ad_num+"\nStudent Name   :"+d.name+"\nAddress  :" +
                         d.address+"\nCollege Name  :"+d.clgname));
+                break;
+            case 3:
+                System.out.println("Admission number for delete");
+                Scanner scn1=new Scanner(System.in);
+                try {
+                    if(s.contains(scn1.nextInt())){
+                        if(s.get(0).ad_num==scn1.nextInt()){
+
+                        }
+                    }
+                    else {
+                        System.out.println("Its not included");
+                    }
+                }catch (Exception e){
+                    System.out.println("Invalid");
+                }
+            break;
+           // case 4:
+
 
 
 
