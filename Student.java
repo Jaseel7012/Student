@@ -68,7 +68,9 @@ public class Student {
                 Student s2=new Student(102,"fgd","house","vhsc");
                 s.add(s1);
                 s.add(s2);
-          //  case 2:
+            case 2:
+                s.forEach(d-> System.out.println("Admission code ..:"+d.ad_num+"\nStudent Name   :"+d.name+"\nAddress  :" +
+                        d.address+"\nCollege Name  :"+d.clgname));
 
 
 
