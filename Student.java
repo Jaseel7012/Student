@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Student {
@@ -46,10 +47,34 @@ public class Student {
     }
 
     public static void main(String[] args) {
-
+        ArrayList<Student> s=new ArrayList<>();
         System.out.println("Enter the  number \n 1-add \n 2-display \n 3-delete \n 4-search 5-exit");
         Scanner scn=new Scanner(System.in);
         switch (scn.nextInt()){
+            case 1:
+                System.out.println("Enter Student Num");
+                Scanner sc=new Scanner(System.in);
+                int sc_int=sc.nextInt();
+                System.out.println("Enter Student Name");
+                Scanner sc1=new Scanner(System.in);
+                String sc_name=sc1.next();
+                System.out.println("Enter Student Address");
+                Scanner sc2=new Scanner(System.in);
+                String sc_address=sc2.next();
+                System.out.println("Enter college name");
+                Scanner sc3=new Scanner(System.in);
+                String sc_clg=sc3.next();
+                Student s1=new Student(sc_int,sc_name,sc_address,sc_clg);
+                Student s2=new Student(102,"fgd","house","vhsc");
+                s.add(s1);
+                s.add(s2);
+          //  case 2:
+
+
+
+
+
+
 
         }
     }
